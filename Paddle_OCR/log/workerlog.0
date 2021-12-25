@@ -1,0 +1,132 @@
+/usr/bin/python3: can't open file '/content/PaddleOCR/tools/train.py': [Errno 2] No such file or directory
+[2021/09/15 15:12:14] root INFO: Architecture : 
+[2021/09/15 15:12:14] root INFO:     Backbone : 
+[2021/09/15 15:12:14] root INFO:         layers : 34
+[2021/09/15 15:12:14] root INFO:         name : ResNet
+[2021/09/15 15:12:14] root INFO:     Head : 
+[2021/09/15 15:12:14] root INFO:         fc_decay : 4e-05
+[2021/09/15 15:12:14] root INFO:         name : CTCHead
+[2021/09/15 15:12:14] root INFO:     Neck : 
+[2021/09/15 15:12:14] root INFO:         encoder_type : rnn
+[2021/09/15 15:12:14] root INFO:         hidden_size : 256
+[2021/09/15 15:12:14] root INFO:         name : SequenceEncoder
+[2021/09/15 15:12:14] root INFO:     Transform : None
+[2021/09/15 15:12:14] root INFO:     algorithm : CRNN
+[2021/09/15 15:12:14] root INFO:     model_type : rec
+[2021/09/15 15:12:14] root INFO: Eval : 
+[2021/09/15 15:12:14] root INFO:     dataset : 
+[2021/09/15 15:12:14] root INFO:         data_dir : /content/drive/MyDrive/test/
+[2021/09/15 15:12:14] root INFO:         label_file_list : ['/content/drive/MyDrive/test/val.txt']
+[2021/09/15 15:12:14] root INFO:         name : SimpleDataSet
+[2021/09/15 15:12:14] root INFO:         transforms : 
+[2021/09/15 15:12:14] root INFO:             DecodeImage : 
+[2021/09/15 15:12:14] root INFO:                 channel_first : False
+[2021/09/15 15:12:14] root INFO:                 img_mode : BGR
+[2021/09/15 15:12:14] root INFO:             CTCLabelEncode : None
+[2021/09/15 15:12:14] root INFO:             RecResizeImg : 
+[2021/09/15 15:12:14] root INFO:                 image_shape : [3, 32, 320]
+[2021/09/15 15:12:14] root INFO:             KeepKeys : 
+[2021/09/15 15:12:14] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/09/15 15:12:14] root INFO:     loader : 
+[2021/09/15 15:12:14] root INFO:         batch_size_per_card : 256
+[2021/09/15 15:12:14] root INFO:         drop_last : False
+[2021/09/15 15:12:14] root INFO:         num_workers : 8
+[2021/09/15 15:12:14] root INFO:         shuffle : False
+[2021/09/15 15:12:14] root INFO: Global : 
+[2021/09/15 15:12:14] root INFO:     cal_metric_during_train : True
+[2021/09/15 15:12:14] root INFO:     character_dict_path : ppocr/utils/Total.txt
+[2021/09/15 15:12:14] root INFO:     character_type : ch
+[2021/09/15 15:12:14] root INFO:     checkpoints : None
+[2021/09/15 15:12:14] root INFO:     debug : False
+[2021/09/15 15:12:14] root INFO:     distributed : False
+[2021/09/15 15:12:14] root INFO:     epoch_num : 500
+[2021/09/15 15:12:14] root INFO:     eval_batch_step : [0, 2000]
+[2021/09/15 15:12:14] root INFO:     infer_img : doc/imgs_words/ch/word_1.jpg
+[2021/09/15 15:12:14] root INFO:     infer_mode : False
+[2021/09/15 15:12:14] root INFO:     log_smooth_window : 20
+[2021/09/15 15:12:14] root INFO:     max_text_length : 25
+[2021/09/15 15:12:14] root INFO:     pretrained_model : None
+[2021/09/15 15:12:14] root INFO:     print_batch_step : 2
+[2021/09/15 15:12:14] root INFO:     save_epoch_step : 3
+[2021/09/15 15:12:14] root INFO:     save_inference_dir : None
+[2021/09/15 15:12:14] root INFO:     save_model_dir : ./output/rec_chinese_common_v2.0
+[2021/09/15 15:12:14] root INFO:     save_res_path : ./output/rec/predicts_chinese_common_v2.0.txt
+[2021/09/15 15:12:14] root INFO:     use_gpu : True
+[2021/09/15 15:12:14] root INFO:     use_space_char : True
+[2021/09/15 15:12:14] root INFO:     use_visualdl : False
+[2021/09/15 15:12:14] root INFO: Loss : 
+[2021/09/15 15:12:14] root INFO:     name : CTCLoss
+[2021/09/15 15:12:14] root INFO: Metric : 
+[2021/09/15 15:12:14] root INFO:     main_indicator : acc
+[2021/09/15 15:12:14] root INFO:     name : RecMetric
+[2021/09/15 15:12:14] root INFO: Optimizer : 
+[2021/09/15 15:12:14] root INFO:     beta1 : 0.9
+[2021/09/15 15:12:14] root INFO:     beta2 : 0.999
+[2021/09/15 15:12:14] root INFO:     lr : 
+[2021/09/15 15:12:14] root INFO:         learning_rate : 0.001
+[2021/09/15 15:12:14] root INFO:         name : Cosine
+[2021/09/15 15:12:14] root INFO:     name : Adam
+[2021/09/15 15:12:14] root INFO:     regularizer : 
+[2021/09/15 15:12:14] root INFO:         factor : 4e-05
+[2021/09/15 15:12:14] root INFO:         name : L2
+[2021/09/15 15:12:14] root INFO: PostProcess : 
+[2021/09/15 15:12:14] root INFO:     name : CTCLabelDecode
+[2021/09/15 15:12:14] root INFO: Train : 
+[2021/09/15 15:12:14] root INFO:     dataset : 
+[2021/09/15 15:12:14] root INFO:         data_dir : /content/drive/MyDrive/test/
+[2021/09/15 15:12:14] root INFO:         label_file_list : ['/content/drive/MyDrive/test/train.txt']
+[2021/09/15 15:12:14] root INFO:         name : SimpleDataSet
+[2021/09/15 15:12:14] root INFO:         transforms : 
+[2021/09/15 15:12:14] root INFO:             DecodeImage : 
+[2021/09/15 15:12:14] root INFO:                 channel_first : False
+[2021/09/15 15:12:14] root INFO:                 img_mode : BGR
+[2021/09/15 15:12:14] root INFO:             RecAug : None
+[2021/09/15 15:12:14] root INFO:             CTCLabelEncode : None
+[2021/09/15 15:12:14] root INFO:             RecResizeImg : 
+[2021/09/15 15:12:14] root INFO:                 image_shape : [3, 32, 320]
+[2021/09/15 15:12:14] root INFO:             KeepKeys : 
+[2021/09/15 15:12:14] root INFO:                 keep_keys : ['image', 'label', 'length']
+[2021/09/15 15:12:14] root INFO:     loader : 
+[2021/09/15 15:12:14] root INFO:         batch_size_per_card : 256
+[2021/09/15 15:12:14] root INFO:         drop_last : True
+[2021/09/15 15:12:14] root INFO:         num_workers : 8
+[2021/09/15 15:12:14] root INFO:         shuffle : True
+[2021/09/15 15:12:14] root INFO: train with paddle 2.0.0 and device CUDAPlace(0)
+[2021/09/15 15:12:14] root INFO: Initialize indexs of datasets:['/content/drive/MyDrive/test/train.txt']
+[2021/09/15 15:12:16] root INFO: Initialize indexs of datasets:['/content/drive/MyDrive/test/val.txt']
+W0915 15:12:20.510390   746 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.2, Runtime API Version: 10.2
+W0915 15:12:20.514402   746 device_context.cc:372] device: 0, cuDNN Version: 7.6.
+[2021/09/15 15:12:31] root INFO: train dataloader has 189 iters
+[2021/09/15 15:12:31] root INFO: valid dataloader has 48 iters
+[2021/09/15 15:12:31] root INFO: During the training process, after the 0th iteration, an evaluation is run every 2000 iterations
+[2021/09/15 15:12:31] root INFO: Initialize indexs of datasets:['/content/drive/MyDrive/test/train.txt']
+[2021/09/15 15:14:31] root ERROR: When parsing line train/img_2619(16).jpg	康
+, error happened with msg: /content/drive/MyDrive/test/train/img_2619(16).jpg does not exist!
+[2021/09/15 15:16:31] root ERROR: When parsing line train/img_960(14).jpg	南
+, error happened with msg: /content/drive/MyDrive/test/train/img_960(14).jpg does not exist!
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, paddle::platform::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+2   paddle::imperative::PreparedOp::Run(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap const&)
+3   std::_Function_handler<void (paddle::framework::ExecutionContext const&), paddle::framework::OpKernelRegistrarFunctor<paddle::platform::CUDAPlace, false, 0ul, paddle::operators::BatchNormKernel<paddle::platform::CUDADeviceContext, float>, paddle::operators::BatchNormKernel<paddle::platform::CUDADeviceContext, double>, paddle::operators::BatchNormKernel<paddle::platform::CUDADeviceContext, paddle::platform::float16> >::operator()(char const*, char const*, int) const::{lambda(paddle::framework::ExecutionContext const&)#1}>::_M_invoke(std::_Any_data const&, paddle::framework::ExecutionContext const&)
+4   paddle::operators::BatchNormKernel<paddle::platform::CUDADeviceContext, float>::Compute(paddle::framework::ExecutionContext const&) const
+5   paddle::framework::Tensor::mutable_data(paddle::platform::Place const&, paddle::framework::proto::VarType_Type, unsigned long)
+6   paddle::memory::AllocShared(paddle::platform::Place const&, unsigned long)
+7   paddle::memory::allocation::AllocatorFacade::AllocShared(paddle::platform::Place const&, unsigned long)
+8   paddle::memory::allocation::AllocatorFacade::Alloc(paddle::platform::Place const&, unsigned long)
+9   paddle::memory::allocation::RetryAllocator::AllocateImpl(unsigned long)
+10  paddle::memory::allocation::AutoGrowthBestFitAllocator::FreeIdleChunks()
+11  paddle::framework::SignalHandle(char const*, int)
+12  paddle::platform::GetCurrentTraceBackString[abi:cxx11]()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Segmentation fault` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1631719275 (unix time) try "date -d @1631719275" if you are using GNU date ***]
+  [SignalInfo: *** SIGSEGV (@0xffffffff00000028) received by PID 746 (TID 0x7f748d23b780) from PID 40 ***]
+
