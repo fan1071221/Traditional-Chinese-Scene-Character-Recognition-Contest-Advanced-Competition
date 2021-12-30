@@ -1,16 +1,18 @@
 # AICUP-2021
 ## Install 
-<pre><code> $ git clone https://github.com/ultralytics/yolov5</code></pre>
-<pre><code> $ cd yolov5</code></pre>
-<pre><code> $ pip install -r requirements.txt</code></pre>
+<pre><code> $ git https://github.com/fan1071221/Traditional-Chinese-Scene-Character-Recognition-Contest-Advanced-Competition.git</code></pre>
 ## Links
 
-* yolov5 file
+* YOLOv5x Weight
 
-You may be using [https://drive.google.com/drive/folders/1eFujH_Cv-ygDIAZUzALhcxiSMpWIhY-e?usp=sharing](https://drive.google.com/drive/folders/1eFujH_Cv-ygDIAZUzALhcxiSMpWIhY-e?usp=sharing).
+You may be using 
+[https://drive.google.com/file/d/1C6_MYhZqZenIScHNpHlxorxepigzmlW6/view?usp=sharing]
+(https://drive.google.com/file/d/1C6_MYhZqZenIScHNpHlxorxepigzmlW6/view?usp=sharing).
+
+You may be using
+[https://drive.google.com/file/d/1--rYhldKNFpVb8n4lfXgTFw3DHqOokFt/view?usp=sharing](https://drive.google.com/file/d/1--rYhldKNFpVb8n4lfXgTFw3DHqOokFt/view?usp=sharing).
+
 * Colab
-
-You may be using [https://drive.google.com/drive/folders/1Q_4tzM9pKTcsa6opo2VUAhslmhYQA4WV?usp=sharing](https://drive.google.com/drive/folders/1Q_4tzM9pKTcsa6opo2VUAhslmhYQA4WV?usp=sharing).
 ## Environment Setting
 * yolov5/data資料夾中新增TWStreet.yaml
 
