@@ -3,13 +3,12 @@
 <pre><code> $ git https://github.com/fan1071221/Traditional-Chinese-Scene-Character-Recognition-Contest-Advanced-Competition.git</code></pre>
 ## Links
 
-* YOLOv5x Weight
+* YOLOv5x Weight1
 
-You may be using 
 [https://drive.google.com/file/d/1C6_MYhZqZenIScHNpHlxorxepigzmlW6/view?usp=sharing](https://drive.google.com/file/d/1C6_MYhZqZenIScHNpHlxorxepigzmlW6/view?usp=sharing).
 
-You may be using
-[https://drive.google.com/file/d/1--rYhldKNFpVb8n4lfXgTFw3DHqOokFt/view?usp=sharing(https://drive.google.com/file/d/1--rYhldKNFpVb8n4lfXgTFw3DHqOokFt/view?usp=sharing).
+* YOLOv5x Weight1
+[https://drive.google.com/file/d/1--rYhldKNFpVb8n4lfXgTFw3DHqOokFt/view?usp=sharing]
 
 * Colab
 ## Environment Setting
